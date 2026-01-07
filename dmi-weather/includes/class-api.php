@@ -130,8 +130,13 @@ class DMI_Weather_API {
      * @return string Formatted time (e.g., "14:00")
      */
     private function format_time($timestamp) {
-        $datetime = new DateTime($timestamp);
-        return $datetime->format('H:i');
+        try {
+            $datetime = new DateTime($timestamp);
+            return $datetime->format('H:i');
+        } catch (Exception $e) {
+            error_log('DMI Weather: Invalid timestamp format: ' . $timestamp);
+            return '--:--';
+        }
     }
     
     /**

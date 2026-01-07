@@ -66,7 +66,7 @@ class DMI_Weather_Icons {
             <path d="M6.5 5.5l-1.5-1.5"></path>
             <path d="M13 22v-2"></path>
             <circle cx="13" cy="12" r="4"></circle>
-            <path d="M8.5 17.5a5 5 0 0 0 0-10 7 7 0 0 0 0 10z"></path>
+            <path d="M22 17.5A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.5"></path>
         </svg>';
     }
     

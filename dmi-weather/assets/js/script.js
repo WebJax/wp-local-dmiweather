@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="weather-temp">
                         ${escapeHtml(hour.temperature)}°C
-                        ${hour.wind_chill ? `<br><span class="feels-like">(feels like ${escapeHtml(hour.wind_chill)}°C)</span>` : ''}
+                        ${hour.wind_chill ? '<br><span class="feels-like">(feels like ' + escapeHtml(hour.wind_chill) + '°C)</span>' : ''}
                     </div>
                     <div class="weather-wind">
                         <span class="weather-label">Wind:</span> ${escapeHtml(hour.wind_speed)} m/s
